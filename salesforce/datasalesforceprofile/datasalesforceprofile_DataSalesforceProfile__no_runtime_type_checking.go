@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package datasalesforceprofile
 
@@ -54,6 +53,14 @@ func (d *jsiiProxy_DataSalesforceProfile) validateOverrideLogicalIdParameters(ne
 }
 
 func validateDataSalesforceProfile_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataSalesforceProfile_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataSalesforceProfile_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
