@@ -1,16 +1,16 @@
-package userrole
+package profile
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-salesforce-go/salesforce/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-salesforce-go/salesforce/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-salesforce-go/salesforce/v3/userrole/internal"
+	"github.com/cdktf/cdktf-provider-salesforce-go/salesforce/v4/profile/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/salesforce/r/user_role salesforce_user_role}.
-type UserRole interface {
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/salesforce/0.1.0/docs/resources/profile salesforce_profile}.
+type Profile interface {
 	cdktf.TerraformResource
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
@@ -21,16 +21,16 @@ type UserRole interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
-	DeveloperName() *string
-	SetDeveloperName(val *string)
-	DeveloperNameInput() *string
+	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -49,9 +49,9 @@ type UserRole interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
-	ParentRoleId() *string
-	SetParentRoleId(val *string)
-	ParentRoleIdInput() *string
+	Permissions() *map[string]interface{}
+	SetPermissions(val *map[string]interface{})
+	PermissionsInput() *map[string]interface{}
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -68,6 +68,9 @@ type UserRole interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	UserLicenseId() *string
+	SetUserLicenseId(val *string)
+	UserLicenseIdInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -93,10 +96,11 @@ type UserRole interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	ResetDescription()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetParentRoleId()
+	ResetPermissions()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -107,12 +111,12 @@ type UserRole interface {
 	ToTerraform() interface{}
 }
 
-// The jsii proxy struct for UserRole
-type jsiiProxy_UserRole struct {
+// The jsii proxy struct for Profile
+type jsiiProxy_Profile struct {
 	internal.Type__cdktfTerraformResource
 }
 
-func (j *jsiiProxy_UserRole) CdktfStack() cdktf.TerraformStack {
+func (j *jsiiProxy_Profile) CdktfStack() cdktf.TerraformStack {
 	var returns cdktf.TerraformStack
 	_jsii_.Get(
 		j,
@@ -122,7 +126,7 @@ func (j *jsiiProxy_UserRole) CdktfStack() cdktf.TerraformStack {
 	return returns
 }
 
-func (j *jsiiProxy_UserRole) Connection() interface{} {
+func (j *jsiiProxy_Profile) Connection() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -132,7 +136,7 @@ func (j *jsiiProxy_UserRole) Connection() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_UserRole) ConstructNodeMetadata() *map[string]interface{} {
+func (j *jsiiProxy_Profile) ConstructNodeMetadata() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
 		j,
@@ -142,8 +146,8 @@ func (j *jsiiProxy_UserRole) ConstructNodeMetadata() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_UserRole) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_Profile) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -152,7 +156,7 @@ func (j *jsiiProxy_UserRole) Count() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_UserRole) DependsOn() *[]*string {
+func (j *jsiiProxy_Profile) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -162,27 +166,27 @@ func (j *jsiiProxy_UserRole) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_UserRole) DeveloperName() *string {
+func (j *jsiiProxy_Profile) Description() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"developerName",
+		"description",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_UserRole) DeveloperNameInput() *string {
+func (j *jsiiProxy_Profile) DescriptionInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
-		"developerNameInput",
+		"descriptionInput",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_UserRole) ForEach() cdktf.ITerraformIterator {
+func (j *jsiiProxy_Profile) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
 		j,
@@ -192,7 +196,7 @@ func (j *jsiiProxy_UserRole) ForEach() cdktf.ITerraformIterator {
 	return returns
 }
 
-func (j *jsiiProxy_UserRole) Fqn() *string {
+func (j *jsiiProxy_Profile) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -202,7 +206,7 @@ func (j *jsiiProxy_UserRole) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_UserRole) FriendlyUniqueId() *string {
+func (j *jsiiProxy_Profile) FriendlyUniqueId() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -212,7 +216,7 @@ func (j *jsiiProxy_UserRole) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_UserRole) Id() *string {
+func (j *jsiiProxy_Profile) Id() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -222,7 +226,7 @@ func (j *jsiiProxy_UserRole) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_UserRole) Lifecycle() *cdktf.TerraformResourceLifecycle {
+func (j *jsiiProxy_Profile) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
@@ -232,7 +236,7 @@ func (j *jsiiProxy_UserRole) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	return returns
 }
 
-func (j *jsiiProxy_UserRole) Name() *string {
+func (j *jsiiProxy_Profile) Name() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -242,7 +246,7 @@ func (j *jsiiProxy_UserRole) Name() *string {
 	return returns
 }
 
-func (j *jsiiProxy_UserRole) NameInput() *string {
+func (j *jsiiProxy_Profile) NameInput() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -252,7 +256,7 @@ func (j *jsiiProxy_UserRole) NameInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_UserRole) Node() constructs.Node {
+func (j *jsiiProxy_Profile) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
 		j,
@@ -262,27 +266,27 @@ func (j *jsiiProxy_UserRole) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_UserRole) ParentRoleId() *string {
-	var returns *string
+func (j *jsiiProxy_Profile) Permissions() *map[string]interface{} {
+	var returns *map[string]interface{}
 	_jsii_.Get(
 		j,
-		"parentRoleId",
+		"permissions",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_UserRole) ParentRoleIdInput() *string {
-	var returns *string
+func (j *jsiiProxy_Profile) PermissionsInput() *map[string]interface{} {
+	var returns *map[string]interface{}
 	_jsii_.Get(
 		j,
-		"parentRoleIdInput",
+		"permissionsInput",
 		&returns,
 	)
 	return returns
 }
 
-func (j *jsiiProxy_UserRole) Provider() cdktf.TerraformProvider {
+func (j *jsiiProxy_Profile) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
 		j,
@@ -292,7 +296,7 @@ func (j *jsiiProxy_UserRole) Provider() cdktf.TerraformProvider {
 	return returns
 }
 
-func (j *jsiiProxy_UserRole) Provisioners() *[]interface{} {
+func (j *jsiiProxy_Profile) Provisioners() *[]interface{} {
 	var returns *[]interface{}
 	_jsii_.Get(
 		j,
@@ -302,7 +306,7 @@ func (j *jsiiProxy_UserRole) Provisioners() *[]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_UserRole) RawOverrides() interface{} {
+func (j *jsiiProxy_Profile) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -312,7 +316,7 @@ func (j *jsiiProxy_UserRole) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_UserRole) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+func (j *jsiiProxy_Profile) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
@@ -322,7 +326,7 @@ func (j *jsiiProxy_UserRole) TerraformGeneratorMetadata() *cdktf.TerraformProvid
 	return returns
 }
 
-func (j *jsiiProxy_UserRole) TerraformMetaArguments() *map[string]interface{} {
+func (j *jsiiProxy_Profile) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
 		j,
@@ -332,7 +336,7 @@ func (j *jsiiProxy_UserRole) TerraformMetaArguments() *map[string]interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_UserRole) TerraformResourceType() *string {
+func (j *jsiiProxy_Profile) TerraformResourceType() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -342,18 +346,38 @@ func (j *jsiiProxy_UserRole) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_Profile) UserLicenseId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"userLicenseId",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://www.terraform.io/docs/providers/salesforce/r/user_role salesforce_user_role} Resource.
-func NewUserRole(scope constructs.Construct, id *string, config *UserRoleConfig) UserRole {
+func (j *jsiiProxy_Profile) UserLicenseIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"userLicenseIdInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/salesforce/0.1.0/docs/resources/profile salesforce_profile} Resource.
+func NewProfile(scope constructs.Construct, id *string, config *ProfileConfig) Profile {
 	_init_.Initialize()
 
-	if err := validateNewUserRoleParameters(scope, id, config); err != nil {
+	if err := validateNewProfileParameters(scope, id, config); err != nil {
 		panic(err)
 	}
-	j := jsiiProxy_UserRole{}
+	j := jsiiProxy_Profile{}
 
 	_jsii_.Create(
-		"@cdktf/provider-salesforce.userRole.UserRole",
+		"@cdktf/provider-salesforce.profile.Profile",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -361,18 +385,18 @@ func NewUserRole(scope constructs.Construct, id *string, config *UserRoleConfig)
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/salesforce/r/user_role salesforce_user_role} Resource.
-func NewUserRole_Override(u UserRole, scope constructs.Construct, id *string, config *UserRoleConfig) {
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/salesforce/0.1.0/docs/resources/profile salesforce_profile} Resource.
+func NewProfile_Override(p Profile, scope constructs.Construct, id *string, config *ProfileConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-salesforce.userRole.UserRole",
+		"@cdktf/provider-salesforce.profile.Profile",
 		[]interface{}{scope, id, config},
-		u,
+		p,
 	)
 }
 
-func (j *jsiiProxy_UserRole)SetConnection(val interface{}) {
+func (j *jsiiProxy_Profile)SetConnection(val interface{}) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
 	}
@@ -383,7 +407,10 @@ func (j *jsiiProxy_UserRole)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_UserRole)SetCount(val *float64) {
+func (j *jsiiProxy_Profile)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",
@@ -391,7 +418,7 @@ func (j *jsiiProxy_UserRole)SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_UserRole)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_Profile)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -399,18 +426,18 @@ func (j *jsiiProxy_UserRole)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_UserRole)SetDeveloperName(val *string) {
-	if err := j.validateSetDeveloperNameParameters(val); err != nil {
+func (j *jsiiProxy_Profile)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"developerName",
+		"description",
 		val,
 	)
 }
 
-func (j *jsiiProxy_UserRole)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Profile)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -418,7 +445,7 @@ func (j *jsiiProxy_UserRole)SetForEach(val cdktf.ITerraformIterator) {
 	)
 }
 
-func (j *jsiiProxy_UserRole)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_Profile)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -429,7 +456,7 @@ func (j *jsiiProxy_UserRole)SetLifecycle(val *cdktf.TerraformResourceLifecycle) 
 	)
 }
 
-func (j *jsiiProxy_UserRole)SetName(val *string) {
+func (j *jsiiProxy_Profile)SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
 	}
@@ -440,18 +467,18 @@ func (j *jsiiProxy_UserRole)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_UserRole)SetParentRoleId(val *string) {
-	if err := j.validateSetParentRoleIdParameters(val); err != nil {
+func (j *jsiiProxy_Profile)SetPermissions(val *map[string]interface{}) {
+	if err := j.validateSetPermissionsParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
-		"parentRoleId",
+		"permissions",
 		val,
 	)
 }
 
-func (j *jsiiProxy_UserRole)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_Profile)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -459,13 +486,24 @@ func (j *jsiiProxy_UserRole)SetProvider(val cdktf.TerraformProvider) {
 	)
 }
 
-func (j *jsiiProxy_UserRole)SetProvisioners(val *[]interface{}) {
+func (j *jsiiProxy_Profile)SetProvisioners(val *[]interface{}) {
 	if err := j.validateSetProvisionersParameters(val); err != nil {
 		panic(err)
 	}
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_Profile)SetUserLicenseId(val *string) {
+	if err := j.validateSetUserLicenseIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"userLicenseId",
 		val,
 	)
 }
@@ -487,16 +525,16 @@ func (j *jsiiProxy_UserRole)SetProvisioners(val *[]interface{}) {
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func UserRole_IsConstruct(x interface{}) *bool {
+func Profile_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
-	if err := validateUserRole_IsConstructParameters(x); err != nil {
+	if err := validateProfile_IsConstructParameters(x); err != nil {
 		panic(err)
 	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-salesforce.userRole.UserRole",
+		"@cdktf/provider-salesforce.profile.Profile",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -506,16 +544,16 @@ func UserRole_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func UserRole_IsTerraformElement(x interface{}) *bool {
+func Profile_IsTerraformElement(x interface{}) *bool {
 	_init_.Initialize()
 
-	if err := validateUserRole_IsTerraformElementParameters(x); err != nil {
+	if err := validateProfile_IsTerraformElementParameters(x); err != nil {
 		panic(err)
 	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-salesforce.userRole.UserRole",
+		"@cdktf/provider-salesforce.profile.Profile",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -525,16 +563,16 @@ func UserRole_IsTerraformElement(x interface{}) *bool {
 }
 
 // Experimental.
-func UserRole_IsTerraformResource(x interface{}) *bool {
+func Profile_IsTerraformResource(x interface{}) *bool {
 	_init_.Initialize()
 
-	if err := validateUserRole_IsTerraformResourceParameters(x); err != nil {
+	if err := validateProfile_IsTerraformResourceParameters(x); err != nil {
 		panic(err)
 	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-salesforce.userRole.UserRole",
+		"@cdktf/provider-salesforce.profile.Profile",
 		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
@@ -543,36 +581,36 @@ func UserRole_IsTerraformResource(x interface{}) *bool {
 	return returns
 }
 
-func UserRole_TfResourceType() *string {
+func Profile_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-salesforce.userRole.UserRole",
+		"@cdktf/provider-salesforce.profile.Profile",
 		"tfResourceType",
 		&returns,
 	)
 	return returns
 }
 
-func (u *jsiiProxy_UserRole) AddOverride(path *string, value interface{}) {
-	if err := u.validateAddOverrideParameters(path, value); err != nil {
+func (p *jsiiProxy_Profile) AddOverride(path *string, value interface{}) {
+	if err := p.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
-		u,
+		p,
 		"addOverride",
 		[]interface{}{path, value},
 	)
 }
 
-func (u *jsiiProxy_UserRole) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
-	if err := u.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
+func (p *jsiiProxy_Profile) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+	if err := p.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
-		u,
+		p,
 		"getAnyMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -581,14 +619,14 @@ func (u *jsiiProxy_UserRole) GetAnyMapAttribute(terraformAttribute *string) *map
 	return returns
 }
 
-func (u *jsiiProxy_UserRole) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
-	if err := u.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
+func (p *jsiiProxy_Profile) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
-		u,
+		p,
 		"getBooleanAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -597,14 +635,14 @@ func (u *jsiiProxy_UserRole) GetBooleanAttribute(terraformAttribute *string) cdk
 	return returns
 }
 
-func (u *jsiiProxy_UserRole) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
-	if err := u.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
+func (p *jsiiProxy_Profile) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+	if err := p.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *map[string]*bool
 
 	_jsii_.Invoke(
-		u,
+		p,
 		"getBooleanMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -613,14 +651,14 @@ func (u *jsiiProxy_UserRole) GetBooleanMapAttribute(terraformAttribute *string) 
 	return returns
 }
 
-func (u *jsiiProxy_UserRole) GetListAttribute(terraformAttribute *string) *[]*string {
-	if err := u.validateGetListAttributeParameters(terraformAttribute); err != nil {
+func (p *jsiiProxy_Profile) GetListAttribute(terraformAttribute *string) *[]*string {
+	if err := p.validateGetListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *[]*string
 
 	_jsii_.Invoke(
-		u,
+		p,
 		"getListAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -629,14 +667,14 @@ func (u *jsiiProxy_UserRole) GetListAttribute(terraformAttribute *string) *[]*st
 	return returns
 }
 
-func (u *jsiiProxy_UserRole) GetNumberAttribute(terraformAttribute *string) *float64 {
-	if err := u.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
+func (p *jsiiProxy_Profile) GetNumberAttribute(terraformAttribute *string) *float64 {
+	if err := p.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *float64
 
 	_jsii_.Invoke(
-		u,
+		p,
 		"getNumberAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -645,14 +683,14 @@ func (u *jsiiProxy_UserRole) GetNumberAttribute(terraformAttribute *string) *flo
 	return returns
 }
 
-func (u *jsiiProxy_UserRole) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
-	if err := u.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
+func (p *jsiiProxy_Profile) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+	if err := p.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *[]*float64
 
 	_jsii_.Invoke(
-		u,
+		p,
 		"getNumberListAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -661,14 +699,14 @@ func (u *jsiiProxy_UserRole) GetNumberListAttribute(terraformAttribute *string) 
 	return returns
 }
 
-func (u *jsiiProxy_UserRole) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
-	if err := u.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
+func (p *jsiiProxy_Profile) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+	if err := p.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *map[string]*float64
 
 	_jsii_.Invoke(
-		u,
+		p,
 		"getNumberMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -677,14 +715,14 @@ func (u *jsiiProxy_UserRole) GetNumberMapAttribute(terraformAttribute *string) *
 	return returns
 }
 
-func (u *jsiiProxy_UserRole) GetStringAttribute(terraformAttribute *string) *string {
-	if err := u.validateGetStringAttributeParameters(terraformAttribute); err != nil {
+func (p *jsiiProxy_Profile) GetStringAttribute(terraformAttribute *string) *string {
+	if err := p.validateGetStringAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *string
 
 	_jsii_.Invoke(
-		u,
+		p,
 		"getStringAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -693,14 +731,14 @@ func (u *jsiiProxy_UserRole) GetStringAttribute(terraformAttribute *string) *str
 	return returns
 }
 
-func (u *jsiiProxy_UserRole) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
-	if err := u.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
+func (p *jsiiProxy_Profile) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+	if err := p.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns *map[string]*string
 
 	_jsii_.Invoke(
-		u,
+		p,
 		"getStringMapAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -709,14 +747,14 @@ func (u *jsiiProxy_UserRole) GetStringMapAttribute(terraformAttribute *string) *
 	return returns
 }
 
-func (u *jsiiProxy_UserRole) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
-	if err := u.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
+func (p *jsiiProxy_Profile) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
 	var returns cdktf.IResolvable
 
 	_jsii_.Invoke(
-		u,
+		p,
 		"interpolationForAttribute",
 		[]interface{}{terraformAttribute},
 		&returns,
@@ -725,38 +763,46 @@ func (u *jsiiProxy_UserRole) InterpolationForAttribute(terraformAttribute *strin
 	return returns
 }
 
-func (u *jsiiProxy_UserRole) OverrideLogicalId(newLogicalId *string) {
-	if err := u.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
+func (p *jsiiProxy_Profile) OverrideLogicalId(newLogicalId *string) {
+	if err := p.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
-		u,
+		p,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
 	)
 }
 
-func (u *jsiiProxy_UserRole) ResetOverrideLogicalId() {
+func (p *jsiiProxy_Profile) ResetDescription() {
 	_jsii_.InvokeVoid(
-		u,
+		p,
+		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (p *jsiiProxy_Profile) ResetOverrideLogicalId() {
+	_jsii_.InvokeVoid(
+		p,
 		"resetOverrideLogicalId",
 		nil, // no parameters
 	)
 }
 
-func (u *jsiiProxy_UserRole) ResetParentRoleId() {
+func (p *jsiiProxy_Profile) ResetPermissions() {
 	_jsii_.InvokeVoid(
-		u,
-		"resetParentRoleId",
+		p,
+		"resetPermissions",
 		nil, // no parameters
 	)
 }
 
-func (u *jsiiProxy_UserRole) SynthesizeAttributes() *map[string]interface{} {
+func (p *jsiiProxy_Profile) SynthesizeAttributes() *map[string]interface{} {
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
-		u,
+		p,
 		"synthesizeAttributes",
 		nil, // no parameters
 		&returns,
@@ -765,11 +811,11 @@ func (u *jsiiProxy_UserRole) SynthesizeAttributes() *map[string]interface{} {
 	return returns
 }
 
-func (u *jsiiProxy_UserRole) ToMetadata() interface{} {
+func (p *jsiiProxy_Profile) ToMetadata() interface{} {
 	var returns interface{}
 
 	_jsii_.Invoke(
-		u,
+		p,
 		"toMetadata",
 		nil, // no parameters
 		&returns,
@@ -778,11 +824,11 @@ func (u *jsiiProxy_UserRole) ToMetadata() interface{} {
 	return returns
 }
 
-func (u *jsiiProxy_UserRole) ToString() *string {
+func (p *jsiiProxy_Profile) ToString() *string {
 	var returns *string
 
 	_jsii_.Invoke(
-		u,
+		p,
 		"toString",
 		nil, // no parameters
 		&returns,
@@ -791,11 +837,11 @@ func (u *jsiiProxy_UserRole) ToString() *string {
 	return returns
 }
 
-func (u *jsiiProxy_UserRole) ToTerraform() interface{} {
+func (p *jsiiProxy_Profile) ToTerraform() interface{} {
 	var returns interface{}
 
 	_jsii_.Invoke(
-		u,
+		p,
 		"toTerraform",
 		nil, // no parameters
 		&returns,

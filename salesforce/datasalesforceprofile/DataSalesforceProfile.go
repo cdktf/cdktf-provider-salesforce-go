@@ -1,25 +1,25 @@
-package datasalesforceuserlicense
+package datasalesforceprofile
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-salesforce-go/salesforce/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-salesforce-go/salesforce/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-salesforce-go/salesforce/v3/datasalesforceuserlicense/internal"
+	"github.com/cdktf/cdktf-provider-salesforce-go/salesforce/v4/datasalesforceprofile/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/salesforce/d/user_license salesforce_user_license}.
-type DataSalesforceUserLicense interface {
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/salesforce/0.1.0/docs/data-sources/profile salesforce_profile}.
+type DataSalesforceProfile interface {
 	cdktf.TerraformDataSource
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -33,13 +33,13 @@ type DataSalesforceUserLicense interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	LicenseDefinitionKey() *string
-	SetLicenseDefinitionKey(val *string)
-	LicenseDefinitionKeyInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Name() *string
+	SetName(val *string)
+	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
@@ -92,12 +92,12 @@ type DataSalesforceUserLicense interface {
 	ToTerraform() interface{}
 }
 
-// The jsii proxy struct for DataSalesforceUserLicense
-type jsiiProxy_DataSalesforceUserLicense struct {
+// The jsii proxy struct for DataSalesforceProfile
+type jsiiProxy_DataSalesforceProfile struct {
 	internal.Type__cdktfTerraformDataSource
 }
 
-func (j *jsiiProxy_DataSalesforceUserLicense) CdktfStack() cdktf.TerraformStack {
+func (j *jsiiProxy_DataSalesforceProfile) CdktfStack() cdktf.TerraformStack {
 	var returns cdktf.TerraformStack
 	_jsii_.Get(
 		j,
@@ -107,7 +107,7 @@ func (j *jsiiProxy_DataSalesforceUserLicense) CdktfStack() cdktf.TerraformStack 
 	return returns
 }
 
-func (j *jsiiProxy_DataSalesforceUserLicense) ConstructNodeMetadata() *map[string]interface{} {
+func (j *jsiiProxy_DataSalesforceProfile) ConstructNodeMetadata() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
 		j,
@@ -117,8 +117,8 @@ func (j *jsiiProxy_DataSalesforceUserLicense) ConstructNodeMetadata() *map[strin
 	return returns
 }
 
-func (j *jsiiProxy_DataSalesforceUserLicense) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataSalesforceProfile) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -127,7 +127,7 @@ func (j *jsiiProxy_DataSalesforceUserLicense) Count() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_DataSalesforceUserLicense) DependsOn() *[]*string {
+func (j *jsiiProxy_DataSalesforceProfile) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
@@ -137,7 +137,7 @@ func (j *jsiiProxy_DataSalesforceUserLicense) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataSalesforceUserLicense) ForEach() cdktf.ITerraformIterator {
+func (j *jsiiProxy_DataSalesforceProfile) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
 		j,
@@ -147,7 +147,7 @@ func (j *jsiiProxy_DataSalesforceUserLicense) ForEach() cdktf.ITerraformIterator
 	return returns
 }
 
-func (j *jsiiProxy_DataSalesforceUserLicense) Fqn() *string {
+func (j *jsiiProxy_DataSalesforceProfile) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -157,7 +157,7 @@ func (j *jsiiProxy_DataSalesforceUserLicense) Fqn() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataSalesforceUserLicense) FriendlyUniqueId() *string {
+func (j *jsiiProxy_DataSalesforceProfile) FriendlyUniqueId() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -167,7 +167,7 @@ func (j *jsiiProxy_DataSalesforceUserLicense) FriendlyUniqueId() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataSalesforceUserLicense) Id() *string {
+func (j *jsiiProxy_DataSalesforceProfile) Id() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -177,27 +177,7 @@ func (j *jsiiProxy_DataSalesforceUserLicense) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataSalesforceUserLicense) LicenseDefinitionKey() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"licenseDefinitionKey",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataSalesforceUserLicense) LicenseDefinitionKeyInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"licenseDefinitionKeyInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataSalesforceUserLicense) Lifecycle() *cdktf.TerraformResourceLifecycle {
+func (j *jsiiProxy_DataSalesforceProfile) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
@@ -207,7 +187,27 @@ func (j *jsiiProxy_DataSalesforceUserLicense) Lifecycle() *cdktf.TerraformResour
 	return returns
 }
 
-func (j *jsiiProxy_DataSalesforceUserLicense) Node() constructs.Node {
+func (j *jsiiProxy_DataSalesforceProfile) Name() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataSalesforceProfile) NameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataSalesforceProfile) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
 		j,
@@ -217,7 +217,7 @@ func (j *jsiiProxy_DataSalesforceUserLicense) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_DataSalesforceUserLicense) Provider() cdktf.TerraformProvider {
+func (j *jsiiProxy_DataSalesforceProfile) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
 		j,
@@ -227,7 +227,7 @@ func (j *jsiiProxy_DataSalesforceUserLicense) Provider() cdktf.TerraformProvider
 	return returns
 }
 
-func (j *jsiiProxy_DataSalesforceUserLicense) RawOverrides() interface{} {
+func (j *jsiiProxy_DataSalesforceProfile) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
 		j,
@@ -237,7 +237,7 @@ func (j *jsiiProxy_DataSalesforceUserLicense) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataSalesforceUserLicense) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
+func (j *jsiiProxy_DataSalesforceProfile) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
@@ -247,7 +247,7 @@ func (j *jsiiProxy_DataSalesforceUserLicense) TerraformGeneratorMetadata() *cdkt
 	return returns
 }
 
-func (j *jsiiProxy_DataSalesforceUserLicense) TerraformMetaArguments() *map[string]interface{} {
+func (j *jsiiProxy_DataSalesforceProfile) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
 		j,
@@ -257,7 +257,7 @@ func (j *jsiiProxy_DataSalesforceUserLicense) TerraformMetaArguments() *map[stri
 	return returns
 }
 
-func (j *jsiiProxy_DataSalesforceUserLicense) TerraformResourceType() *string {
+func (j *jsiiProxy_DataSalesforceProfile) TerraformResourceType() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
@@ -268,17 +268,17 @@ func (j *jsiiProxy_DataSalesforceUserLicense) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/salesforce/d/user_license salesforce_user_license} Data Source.
-func NewDataSalesforceUserLicense(scope constructs.Construct, id *string, config *DataSalesforceUserLicenseConfig) DataSalesforceUserLicense {
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/salesforce/0.1.0/docs/data-sources/profile salesforce_profile} Data Source.
+func NewDataSalesforceProfile(scope constructs.Construct, id *string, config *DataSalesforceProfileConfig) DataSalesforceProfile {
 	_init_.Initialize()
 
-	if err := validateNewDataSalesforceUserLicenseParameters(scope, id, config); err != nil {
+	if err := validateNewDataSalesforceProfileParameters(scope, id, config); err != nil {
 		panic(err)
 	}
-	j := jsiiProxy_DataSalesforceUserLicense{}
+	j := jsiiProxy_DataSalesforceProfile{}
 
 	_jsii_.Create(
-		"@cdktf/provider-salesforce.dataSalesforceUserLicense.DataSalesforceUserLicense",
+		"@cdktf/provider-salesforce.dataSalesforceProfile.DataSalesforceProfile",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -286,18 +286,21 @@ func NewDataSalesforceUserLicense(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/salesforce/d/user_license salesforce_user_license} Data Source.
-func NewDataSalesforceUserLicense_Override(d DataSalesforceUserLicense, scope constructs.Construct, id *string, config *DataSalesforceUserLicenseConfig) {
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/salesforce/0.1.0/docs/data-sources/profile salesforce_profile} Data Source.
+func NewDataSalesforceProfile_Override(d DataSalesforceProfile, scope constructs.Construct, id *string, config *DataSalesforceProfileConfig) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-salesforce.dataSalesforceUserLicense.DataSalesforceUserLicense",
+		"@cdktf/provider-salesforce.dataSalesforceProfile.DataSalesforceProfile",
 		[]interface{}{scope, id, config},
 		d,
 	)
 }
 
-func (j *jsiiProxy_DataSalesforceUserLicense)SetCount(val *float64) {
+func (j *jsiiProxy_DataSalesforceProfile)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",
@@ -305,7 +308,7 @@ func (j *jsiiProxy_DataSalesforceUserLicense)SetCount(val *float64) {
 	)
 }
 
-func (j *jsiiProxy_DataSalesforceUserLicense)SetDependsOn(val *[]*string) {
+func (j *jsiiProxy_DataSalesforceProfile)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
@@ -313,7 +316,7 @@ func (j *jsiiProxy_DataSalesforceUserLicense)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataSalesforceUserLicense)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataSalesforceProfile)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -321,18 +324,7 @@ func (j *jsiiProxy_DataSalesforceUserLicense)SetForEach(val cdktf.ITerraformIter
 	)
 }
 
-func (j *jsiiProxy_DataSalesforceUserLicense)SetLicenseDefinitionKey(val *string) {
-	if err := j.validateSetLicenseDefinitionKeyParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"licenseDefinitionKey",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataSalesforceUserLicense)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataSalesforceProfile)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -343,7 +335,18 @@ func (j *jsiiProxy_DataSalesforceUserLicense)SetLifecycle(val *cdktf.TerraformRe
 	)
 }
 
-func (j *jsiiProxy_DataSalesforceUserLicense)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataSalesforceProfile)SetName(val *string) {
+	if err := j.validateSetNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataSalesforceProfile)SetProvider(val cdktf.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -368,16 +371,16 @@ func (j *jsiiProxy_DataSalesforceUserLicense)SetProvider(val cdktf.TerraformProv
 // this type-testing method instead.
 //
 // Returns: true if `x` is an object created from a class which extends `Construct`.
-func DataSalesforceUserLicense_IsConstruct(x interface{}) *bool {
+func DataSalesforceProfile_IsConstruct(x interface{}) *bool {
 	_init_.Initialize()
 
-	if err := validateDataSalesforceUserLicense_IsConstructParameters(x); err != nil {
+	if err := validateDataSalesforceProfile_IsConstructParameters(x); err != nil {
 		panic(err)
 	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-salesforce.dataSalesforceUserLicense.DataSalesforceUserLicense",
+		"@cdktf/provider-salesforce.dataSalesforceProfile.DataSalesforceProfile",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -387,16 +390,16 @@ func DataSalesforceUserLicense_IsConstruct(x interface{}) *bool {
 }
 
 // Experimental.
-func DataSalesforceUserLicense_IsTerraformDataSource(x interface{}) *bool {
+func DataSalesforceProfile_IsTerraformDataSource(x interface{}) *bool {
 	_init_.Initialize()
 
-	if err := validateDataSalesforceUserLicense_IsTerraformDataSourceParameters(x); err != nil {
+	if err := validateDataSalesforceProfile_IsTerraformDataSourceParameters(x); err != nil {
 		panic(err)
 	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-salesforce.dataSalesforceUserLicense.DataSalesforceUserLicense",
+		"@cdktf/provider-salesforce.dataSalesforceProfile.DataSalesforceProfile",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -406,16 +409,16 @@ func DataSalesforceUserLicense_IsTerraformDataSource(x interface{}) *bool {
 }
 
 // Experimental.
-func DataSalesforceUserLicense_IsTerraformElement(x interface{}) *bool {
+func DataSalesforceProfile_IsTerraformElement(x interface{}) *bool {
 	_init_.Initialize()
 
-	if err := validateDataSalesforceUserLicense_IsTerraformElementParameters(x); err != nil {
+	if err := validateDataSalesforceProfile_IsTerraformElementParameters(x); err != nil {
 		panic(err)
 	}
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-salesforce.dataSalesforceUserLicense.DataSalesforceUserLicense",
+		"@cdktf/provider-salesforce.dataSalesforceProfile.DataSalesforceProfile",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -424,18 +427,18 @@ func DataSalesforceUserLicense_IsTerraformElement(x interface{}) *bool {
 	return returns
 }
 
-func DataSalesforceUserLicense_TfResourceType() *string {
+func DataSalesforceProfile_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-salesforce.dataSalesforceUserLicense.DataSalesforceUserLicense",
+		"@cdktf/provider-salesforce.dataSalesforceProfile.DataSalesforceProfile",
 		"tfResourceType",
 		&returns,
 	)
 	return returns
 }
 
-func (d *jsiiProxy_DataSalesforceUserLicense) AddOverride(path *string, value interface{}) {
+func (d *jsiiProxy_DataSalesforceProfile) AddOverride(path *string, value interface{}) {
 	if err := d.validateAddOverrideParameters(path, value); err != nil {
 		panic(err)
 	}
@@ -446,7 +449,7 @@ func (d *jsiiProxy_DataSalesforceUserLicense) AddOverride(path *string, value in
 	)
 }
 
-func (d *jsiiProxy_DataSalesforceUserLicense) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
+func (d *jsiiProxy_DataSalesforceProfile) GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{} {
 	if err := d.validateGetAnyMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -462,7 +465,7 @@ func (d *jsiiProxy_DataSalesforceUserLicense) GetAnyMapAttribute(terraformAttrib
 	return returns
 }
 
-func (d *jsiiProxy_DataSalesforceUserLicense) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataSalesforceProfile) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -478,7 +481,7 @@ func (d *jsiiProxy_DataSalesforceUserLicense) GetBooleanAttribute(terraformAttri
 	return returns
 }
 
-func (d *jsiiProxy_DataSalesforceUserLicense) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
+func (d *jsiiProxy_DataSalesforceProfile) GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool {
 	if err := d.validateGetBooleanMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -494,7 +497,7 @@ func (d *jsiiProxy_DataSalesforceUserLicense) GetBooleanMapAttribute(terraformAt
 	return returns
 }
 
-func (d *jsiiProxy_DataSalesforceUserLicense) GetListAttribute(terraformAttribute *string) *[]*string {
+func (d *jsiiProxy_DataSalesforceProfile) GetListAttribute(terraformAttribute *string) *[]*string {
 	if err := d.validateGetListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -510,7 +513,7 @@ func (d *jsiiProxy_DataSalesforceUserLicense) GetListAttribute(terraformAttribut
 	return returns
 }
 
-func (d *jsiiProxy_DataSalesforceUserLicense) GetNumberAttribute(terraformAttribute *string) *float64 {
+func (d *jsiiProxy_DataSalesforceProfile) GetNumberAttribute(terraformAttribute *string) *float64 {
 	if err := d.validateGetNumberAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -526,7 +529,7 @@ func (d *jsiiProxy_DataSalesforceUserLicense) GetNumberAttribute(terraformAttrib
 	return returns
 }
 
-func (d *jsiiProxy_DataSalesforceUserLicense) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
+func (d *jsiiProxy_DataSalesforceProfile) GetNumberListAttribute(terraformAttribute *string) *[]*float64 {
 	if err := d.validateGetNumberListAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -542,7 +545,7 @@ func (d *jsiiProxy_DataSalesforceUserLicense) GetNumberListAttribute(terraformAt
 	return returns
 }
 
-func (d *jsiiProxy_DataSalesforceUserLicense) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
+func (d *jsiiProxy_DataSalesforceProfile) GetNumberMapAttribute(terraformAttribute *string) *map[string]*float64 {
 	if err := d.validateGetNumberMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -558,7 +561,7 @@ func (d *jsiiProxy_DataSalesforceUserLicense) GetNumberMapAttribute(terraformAtt
 	return returns
 }
 
-func (d *jsiiProxy_DataSalesforceUserLicense) GetStringAttribute(terraformAttribute *string) *string {
+func (d *jsiiProxy_DataSalesforceProfile) GetStringAttribute(terraformAttribute *string) *string {
 	if err := d.validateGetStringAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -574,7 +577,7 @@ func (d *jsiiProxy_DataSalesforceUserLicense) GetStringAttribute(terraformAttrib
 	return returns
 }
 
-func (d *jsiiProxy_DataSalesforceUserLicense) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
+func (d *jsiiProxy_DataSalesforceProfile) GetStringMapAttribute(terraformAttribute *string) *map[string]*string {
 	if err := d.validateGetStringMapAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -590,7 +593,7 @@ func (d *jsiiProxy_DataSalesforceUserLicense) GetStringMapAttribute(terraformAtt
 	return returns
 }
 
-func (d *jsiiProxy_DataSalesforceUserLicense) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataSalesforceProfile) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
@@ -606,7 +609,7 @@ func (d *jsiiProxy_DataSalesforceUserLicense) InterpolationForAttribute(terrafor
 	return returns
 }
 
-func (d *jsiiProxy_DataSalesforceUserLicense) OverrideLogicalId(newLogicalId *string) {
+func (d *jsiiProxy_DataSalesforceProfile) OverrideLogicalId(newLogicalId *string) {
 	if err := d.validateOverrideLogicalIdParameters(newLogicalId); err != nil {
 		panic(err)
 	}
@@ -617,7 +620,7 @@ func (d *jsiiProxy_DataSalesforceUserLicense) OverrideLogicalId(newLogicalId *st
 	)
 }
 
-func (d *jsiiProxy_DataSalesforceUserLicense) ResetOverrideLogicalId() {
+func (d *jsiiProxy_DataSalesforceProfile) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
@@ -625,7 +628,7 @@ func (d *jsiiProxy_DataSalesforceUserLicense) ResetOverrideLogicalId() {
 	)
 }
 
-func (d *jsiiProxy_DataSalesforceUserLicense) SynthesizeAttributes() *map[string]interface{} {
+func (d *jsiiProxy_DataSalesforceProfile) SynthesizeAttributes() *map[string]interface{} {
 	var returns *map[string]interface{}
 
 	_jsii_.Invoke(
@@ -638,7 +641,7 @@ func (d *jsiiProxy_DataSalesforceUserLicense) SynthesizeAttributes() *map[string
 	return returns
 }
 
-func (d *jsiiProxy_DataSalesforceUserLicense) ToMetadata() interface{} {
+func (d *jsiiProxy_DataSalesforceProfile) ToMetadata() interface{} {
 	var returns interface{}
 
 	_jsii_.Invoke(
@@ -651,7 +654,7 @@ func (d *jsiiProxy_DataSalesforceUserLicense) ToMetadata() interface{} {
 	return returns
 }
 
-func (d *jsiiProxy_DataSalesforceUserLicense) ToString() *string {
+func (d *jsiiProxy_DataSalesforceProfile) ToString() *string {
 	var returns *string
 
 	_jsii_.Invoke(
@@ -664,7 +667,7 @@ func (d *jsiiProxy_DataSalesforceUserLicense) ToString() *string {
 	return returns
 }
 
-func (d *jsiiProxy_DataSalesforceUserLicense) ToTerraform() interface{} {
+func (d *jsiiProxy_DataSalesforceProfile) ToTerraform() interface{} {
 	var returns interface{}
 
 	_jsii_.Invoke(

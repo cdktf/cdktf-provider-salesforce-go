@@ -64,6 +64,10 @@ func validateDataSalesforceUserLicense_IsTerraformElementParameters(x interface{
 	return nil
 }
 
+func (j *jsiiProxy_DataSalesforceUserLicense) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataSalesforceUserLicense) validateSetLicenseDefinitionKeyParameters(val *string) error {
 	return nil
 }

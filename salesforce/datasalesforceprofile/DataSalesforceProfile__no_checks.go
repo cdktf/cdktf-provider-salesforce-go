@@ -64,6 +64,10 @@ func validateDataSalesforceProfile_IsTerraformElementParameters(x interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_DataSalesforceProfile) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataSalesforceProfile) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

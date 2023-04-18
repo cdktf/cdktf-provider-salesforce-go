@@ -1,6 +1,6 @@
 //go:build !no_runtime_type_checking
 
-package user
+package userrole
 
 import (
 	"fmt"
@@ -11,7 +11,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-func (u *jsiiProxy_User) validateAddOverrideParameters(path *string, value interface{}) error {
+func (u *jsiiProxy_UserRole) validateAddOverrideParameters(path *string, value interface{}) error {
 	if path == nil {
 		return fmt.Errorf("parameter path is required, but nil was provided")
 	}
@@ -23,7 +23,7 @@ func (u *jsiiProxy_User) validateAddOverrideParameters(path *string, value inter
 	return nil
 }
 
-func (u *jsiiProxy_User) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
+func (u *jsiiProxy_UserRole) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -31,7 +31,7 @@ func (u *jsiiProxy_User) validateGetAnyMapAttributeParameters(terraformAttribute
 	return nil
 }
 
-func (u *jsiiProxy_User) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
+func (u *jsiiProxy_UserRole) validateGetBooleanAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -39,7 +39,7 @@ func (u *jsiiProxy_User) validateGetBooleanAttributeParameters(terraformAttribut
 	return nil
 }
 
-func (u *jsiiProxy_User) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
+func (u *jsiiProxy_UserRole) validateGetBooleanMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -47,7 +47,7 @@ func (u *jsiiProxy_User) validateGetBooleanMapAttributeParameters(terraformAttri
 	return nil
 }
 
-func (u *jsiiProxy_User) validateGetListAttributeParameters(terraformAttribute *string) error {
+func (u *jsiiProxy_UserRole) validateGetListAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -55,7 +55,7 @@ func (u *jsiiProxy_User) validateGetListAttributeParameters(terraformAttribute *
 	return nil
 }
 
-func (u *jsiiProxy_User) validateGetNumberAttributeParameters(terraformAttribute *string) error {
+func (u *jsiiProxy_UserRole) validateGetNumberAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -63,7 +63,7 @@ func (u *jsiiProxy_User) validateGetNumberAttributeParameters(terraformAttribute
 	return nil
 }
 
-func (u *jsiiProxy_User) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
+func (u *jsiiProxy_UserRole) validateGetNumberListAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -71,7 +71,7 @@ func (u *jsiiProxy_User) validateGetNumberListAttributeParameters(terraformAttri
 	return nil
 }
 
-func (u *jsiiProxy_User) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
+func (u *jsiiProxy_UserRole) validateGetNumberMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -79,7 +79,7 @@ func (u *jsiiProxy_User) validateGetNumberMapAttributeParameters(terraformAttrib
 	return nil
 }
 
-func (u *jsiiProxy_User) validateGetStringAttributeParameters(terraformAttribute *string) error {
+func (u *jsiiProxy_UserRole) validateGetStringAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -87,7 +87,7 @@ func (u *jsiiProxy_User) validateGetStringAttributeParameters(terraformAttribute
 	return nil
 }
 
-func (u *jsiiProxy_User) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
+func (u *jsiiProxy_UserRole) validateGetStringMapAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -95,7 +95,7 @@ func (u *jsiiProxy_User) validateGetStringMapAttributeParameters(terraformAttrib
 	return nil
 }
 
-func (u *jsiiProxy_User) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+func (u *jsiiProxy_UserRole) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	if terraformAttribute == nil {
 		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
@@ -103,7 +103,7 @@ func (u *jsiiProxy_User) validateInterpolationForAttributeParameters(terraformAt
 	return nil
 }
 
-func (u *jsiiProxy_User) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+func (u *jsiiProxy_UserRole) validateOverrideLogicalIdParameters(newLogicalId *string) error {
 	if newLogicalId == nil {
 		return fmt.Errorf("parameter newLogicalId is required, but nil was provided")
 	}
@@ -111,7 +111,7 @@ func (u *jsiiProxy_User) validateOverrideLogicalIdParameters(newLogicalId *strin
 	return nil
 }
 
-func validateUser_IsConstructParameters(x interface{}) error {
+func validateUserRole_IsConstructParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -119,7 +119,7 @@ func validateUser_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
-func validateUser_IsTerraformElementParameters(x interface{}) error {
+func validateUserRole_IsTerraformElementParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -127,7 +127,7 @@ func validateUser_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 
-func validateUser_IsTerraformResourceParameters(x interface{}) error {
+func validateUserRole_IsTerraformResourceParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
 	}
@@ -135,15 +135,7 @@ func validateUser_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
-func (j *jsiiProxy_User) validateSetAliasParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_User) validateSetConnectionParameters(val interface{}) error {
+func (j *jsiiProxy_UserRole) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:
 		val := val.(*cdktf.SSHProvisionerConnection)
@@ -176,7 +168,64 @@ func (j *jsiiProxy_User) validateSetConnectionParameters(val interface{}) error 
 	return nil
 }
 
-func (j *jsiiProxy_User) validateSetEmailParameters(val *string) error {
+func (j *jsiiProxy_UserRole) validateSetCountParameters(val interface{}) error {
+	switch val.(type) {
+	case *float64:
+		// ok
+	case float64:
+		// ok
+	case *int:
+		// ok
+	case int:
+		// ok
+	case *uint:
+		// ok
+	case uint:
+		// ok
+	case *int8:
+		// ok
+	case int8:
+		// ok
+	case *int16:
+		// ok
+	case int16:
+		// ok
+	case *int32:
+		// ok
+	case int32:
+		// ok
+	case *int64:
+		// ok
+	case int64:
+		// ok
+	case *uint8:
+		// ok
+	case uint8:
+		// ok
+	case *uint16:
+		// ok
+	case uint16:
+		// ok
+	case *uint32:
+		// ok
+	case uint32:
+		// ok
+	case *uint64:
+		// ok
+	case uint64:
+		// ok
+	case cdktf.TerraformCount:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *float64, cdktf.TerraformCount; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_UserRole) validateSetDeveloperNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -184,31 +233,7 @@ func (j *jsiiProxy_User) validateSetEmailParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_User) validateSetEmailEncodingKeyParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_User) validateSetLanguageLocaleKeyParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_User) validateSetLastNameParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_User) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_UserRole) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
 	}
@@ -216,7 +241,7 @@ func (j *jsiiProxy_User) validateSetLifecycleParameters(val *cdktf.TerraformReso
 	return nil
 }
 
-func (j *jsiiProxy_User) validateSetLocaleSidKeyParameters(val *string) error {
+func (j *jsiiProxy_UserRole) validateSetNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -224,7 +249,7 @@ func (j *jsiiProxy_User) validateSetLocaleSidKeyParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_User) validateSetProfileIdParameters(val *string) error {
+func (j *jsiiProxy_UserRole) validateSetParentRoleIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -232,7 +257,7 @@ func (j *jsiiProxy_User) validateSetProfileIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_User) validateSetProvisionersParameters(val *[]interface{}) error {
+func (j *jsiiProxy_UserRole) validateSetProvisionersParameters(val *[]interface{}) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {
 		case *cdktf.FileProvisioner:
@@ -278,51 +303,7 @@ func (j *jsiiProxy_User) validateSetProvisionersParameters(val *[]interface{}) e
 	return nil
 }
 
-func (j *jsiiProxy_User) validateSetResetPasswordParameters(val interface{}) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-	switch val.(type) {
-	case *bool:
-		// ok
-	case bool:
-		// ok
-	case cdktf.IResolvable:
-		// ok
-	default:
-		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
-		}
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_User) validateSetTimeZoneSidKeyParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_User) validateSetUsernameParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_User) validateSetUserRoleIdParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func validateNewUserParameters(scope constructs.Construct, id *string, config *UserConfig) error {
+func validateNewUserRoleParameters(scope constructs.Construct, id *string, config *UserRoleConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")
 	}
