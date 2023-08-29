@@ -1,11 +1,14 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package profile
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-salesforce-go/salesforce/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-salesforce-go/salesforce/v6/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-salesforce-go/salesforce/v5/profile/internal"
+	"github.com/cdktf/cdktf-provider-salesforce-go/salesforce/v6/profile/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
