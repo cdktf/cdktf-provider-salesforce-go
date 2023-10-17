@@ -15,6 +15,10 @@ func (s *jsiiProxy_SalesforceProvider) validateOverrideLogicalIdParameters(newLo
 	return nil
 }
 
+func validateSalesforceProvider_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateSalesforceProvider_IsConstructParameters(x interface{}) error {
 	return nil
 }

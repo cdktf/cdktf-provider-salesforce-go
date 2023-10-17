@@ -55,6 +55,10 @@ func (d *jsiiProxy_DataSalesforceProfile) validateOverrideLogicalIdParameters(ne
 	return nil
 }
 
+func validateDataSalesforceProfile_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataSalesforceProfile_IsConstructParameters(x interface{}) error {
 	return nil
 }
